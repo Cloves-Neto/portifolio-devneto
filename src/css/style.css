@@ -36,3 +36,78 @@ body{
     align-items: center;
     flex-direction: column;
 }
+
+/* Menu principal - fixado ao topo */
+#header__menu{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+#menu__navigation{
+    width: 100%;
+    max-width:  var(--mx-width);
+    height: 100%;
+    display: grid;
+    background-color: var(--midnight-blue);
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-auto-flow: row;
+    padding: 10px;
+}
+#switch__theme{
+    width: 60px;
+    height: 80px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+}
+.ico__container .ico{
+    cursor: pointer;
+}
+#menu__list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    list-style: none;
+}
+.item__list a{
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: grey;
+    padding: 5px;
+}
+.item__list a.active, .item__list a:hover{
+    color: var(--light-purple);
+}
+#menu__download{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+#menu__download ion-icon{
+    font-size: 25px;
+    color: grey;
+}
+#menu__download a{
+    color: grey;
+    font-size: 1.2rem;
+    text-transform: lowercase;
+    text-decoration: none;
+    font-weight: 600;
+}
+#menu__download:hover a,
+#menu__download:hover ion-icon{
+    transition: ease-in-out .5s;
+    color: var(--light-purple);
+}
+
+
