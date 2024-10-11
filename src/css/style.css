@@ -6,7 +6,7 @@
     --sweet-purple: #5B00BD;
     --ghost-purple: #2F0D5C;
     --light-purple: #8C3EF1;
-    --mx-width: 1440px;
+    --mx-width: 1980px;
 }
 
 *, 
@@ -90,7 +90,8 @@ body{
     display: flex;
     flex-direction: row;
     gap: 10px;
-    justify-content: center;
+    padding-right: 15px;
+    justify-content: flex-end;
     align-items: center;
 }
 #menu__download ion-icon{
@@ -98,16 +99,17 @@ body{
     color: grey;
 }
 #menu__download a{
-    color: grey;
+    color: var(--light-purple);
     font-size: 1.2rem;
-    text-transform: lowercase;
+    text-transform: capitalize;
     text-decoration: none;
     font-weight: 600;
+    
 }
-#menu__download:hover a,
-#menu__download:hover ion-icon{
-    transition: ease-in-out .5s;
-    color: var(--light-purple);
+#menu__download a:hover{
+    color: var(--sweet-purple);
+    transition: ease-in-out .3s;
 }
+
 
 
