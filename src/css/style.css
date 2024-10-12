@@ -139,6 +139,40 @@ body{
     justify-content: center;
     align-items: center;
 }
+/* Display name - looping infinito */
+#container__display__name{
+    position: absolute;
+    top: 35%;
+    width: 100%;
+    text-align: center;
+    padding: 8px;
+    display: flex;
+    overflow: hidden;
+    user-select: none;
+    z-index: 1;
+}
+.display__name{
+    display: flex;
+    flex-shrink: 0;
+    min-width: 100%;
+    gap: .5rem;
+    overflow-x: hidden;
+    animation: scroll 20s linear infinite;
+}
+.display__name li{
+    display: flex;
+    gap: 2rem;
+}
+.display__name li span{
+    font-size: 180px;
+    font-weight: 800;
+    color: rgba(255, 255, 255, 0.1);
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    letter-spacing: 1rem;
+}
 /* Content - texto de introdução */
 .container__content{
     width: 100%;
